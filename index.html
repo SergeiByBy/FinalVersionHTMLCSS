@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../myPage/img/favicon.png">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Maket</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar bg-white px-lg-5 py-3 px-1 align-content-center justify-content-center">
+                <div class="d-flex align-self-center me-0 me-lg-auto">
+                    <a class="nav-link me-5 me-lg-2 me-lg-3 align-self-center" href="#"><img class="logo" src="./img/logo.png" alt="logo"></a>
+                    <ul class="navbar-nav py-3 flex-row d-none d-lg-flex align-content-center">
+                        <li class="nav-item me-4">
+                            <a class="color-text text-primary" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="color-text" href="#our-blog">Blog</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="color-text" href="#features">Features</a>
+                        </li>
+                        <li class=" nav-item me-4">
+                            <a class="color-text" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="color-text" href="#doc">Documentation</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="links d-flex align-content-center">
+                    <ul class="links d-flex align-content-center me-4 me-lg-2">
+                        <li class="nav-item-link me-4 me-md-5 align-self-center">
+                            <a href="http://www.facebook.com.vn/"><svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 9 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.65597 17V9.24548H8.22501L8.60969 6.2234H5.65597V4.294C5.65597 3.41904 5.89578 2.82278 7.13417 2.82278L8.71368 2.82208V0.119112C8.44051 0.0822826 7.5029 -1.65981e-08 6.41206 -1.65981e-08C4.13475 -1.65981e-08 2.57564 1.40836
+                                  2.57564 3.9947V6.2234H-2.3404e-08V9.24548H2.57564V17H5.65597Z"
+                        fill="#B6BAC7"
+            />
+                    </svg>
+                  </a>
+                        </li>
+                        <li class="nav-item-link me-4 me-md-5 align-self-center">
+                            <a href="https://telegram.org/"><svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 15 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.04945 8.72806L11.4957 12.5768C12.1172 12.9048 12.5657 12.735 12.7205 12.0249L14.9374 2.03246C15.1644 1.16206 14.5906 0.76729 13.996 1.02547L0.978404 5.82666C0.0898302 6.16756 0.0950105 6.64173 0.816436 6.85301L4.15705 7.85032L11.8909
+                                  3.18335C12.256 2.97158 12.5911 3.08543 12.3161 3.31891"
+                        fill="#B6BAC7"
+            />
+                    </svg>
+                  </a>
+                        </li>
+                        <li class="nav-item-link me-4 me-md-5 align-self-center">
+                            <a href="https://hca.twimg.com/ru/using-twitter/create-twitter-account"><svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 18 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.0328 1.84041C16.4253 2.11761 15.7726 2.30417 15.0877 2.38898C15.7868 1.95807 16.3239 1.27594 16.5767 0.46342C15.9222 0.862259 15.1973 1.15191 14.4257 1.308C13.8081 0.631966 12.9276 0.210602 11.9535 0.210602C10.0832 0.210602
+                                  8.56631 1.76886 8.56631 3.69017C8.56631 3.96313 8.59598 4.22867 8.65402 4.48334C5.83853 4.33759 3.3424 2.95159 1.67204 0.847419C1.38053 1.36154 1.2135 1.95887 1.2135 2.59648C1.2135 3.80359 1.81147 4.86853 2.72005 5.49303C2.16541
+                                  5.47448 1.64276 5.31812 1.18615 5.05709V5.10081C1.18615 6.7876 2.35476 8.19347 3.90258 8.51347C3.61882 8.59297 3.31957 8.63537 3.01181 8.63537C2.79357 8.63537 2.581 8.61417 2.37462 8.5731C2.80543 9.95591 4.05659 10.9619 5.53864
+                                  10.99C4.37931 11.9228 2.91868 12.4793 1.33113 12.4793C1.05768 12.4793 0.788618 12.4634 0.523682 12.4308C2.02249 13.4183 3.80327 13.9944 5.71599 13.9944C11.946 13.9944 15.3531 8.69155 15.3531 4.09365C15.3531 3.94259 15.3498
+                                  3.79286 15.3433 3.64313C16.0053 3.15286 16.5798 2.53937 17.0338 1.84107"
+                        fill="#6188FF"
+            />
+                    </svg>
+                  </a>
+                        </li>
+                        <li class="nav-item-link me-4 me-md-5 align-self-center">
+                            <a href="https://vk.com/"><svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.0001 2.10651H16.3472C16.1047 2.10651 15.7619 2.45072 15.7619 2.67109V10.6583C15.7619 10.8789 16.1047 11.1796 16.3472 11.1796H17.0001V13.0755H11.084V11.1796H12.3223V2.78361H12.2616L9.36999 13.0755H7.13129L4.277 2.78361H4.20477V11.1796H5.44303V13.0755H0.48999V11.1796H1.12422C1.38542
+                                  11.1796 1.72825 10.8789 1.72825 10.6583V2.67109C1.72825 2.45072 1.38542 2.10651 1.12422 2.10651H0.48999V0.210635H6.68355L8.717 7.65872H8.77295L10.8252 0.210635H17.0001V2.10651Z"
+                        fill="#757E9A"
+            />
+                    </svg>
+                  </a>
+                        </li>
+                    </ul>
+                    <button id="btnBlue" class="btn1 btn d-flex align-content-center justify-content-center d-none d-lg-flex">
+                Get started
+              </button>
+                </div>
+                <button class="navbar-toggler d-flex ms-auto d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="offcanvas offcanvas-end text-bg-dark bg-primary-dark" tabindex="-1" id="offcanvasDarkNavbar">
+                    <div class="offcanvas-header p-5">
+                        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body p-5 py-0">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item mb-4">
+                                <a class="color-text2 text-primary" href="/index.html">Home</a
+                    >
+                  </li>
+                  <li class="nav-item mb-4">
+                    <a class="color-text2" href="#our-blog">Blog</a>
+                            </li>
+                            <li class="nav-item mb-4">
+                                <a class="color-text2" href="#features">Features</a>
+                            </li>
+                            <li class="nav-item mb-4">
+                                <a class="color-text2" href="#pricing">Pricing</a>
+                            </li>
+                            <li class="nav-item mb-4">
+                                <a class="color-text2" href="#doc">Documentation</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Поиск</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-img border-top border-bottom position-relative">
+            <div class="position-absolute img-up w-100 h-50 bottom-0 start-0 end-0">
+                <img class="w-100 position-absolute" src="./img/Vector.png" alt="bg-main">
+            </div>
+            <div class="container position-relative">
+                <div class="w-100 text-blog m-auto">
+                    <h4 class="text-center">PLAN YOUR LIFE</h4>
+                    <h1 class="text-center">Increase your <span>productivity</span></h1>
+                    <p class="w-50 m-auto text-center">
+                        Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.
+                    </p>
+                    <div class="itd-play" data-bs-toggle="modal" data-bs-target="#mymodal">
+                        <div class="itd-triangle align-self-center"></div>
+                    </div>
+                </div>
+                <span><img
+                class="position-absolute cloud1"
+                src="./img/cloud1.svg"
+                alt="cloud1"
+  ></span>
+                <span><img
+                class="position-absolute cloud2"
+                src="./img/cloud2.svg"
+                alt="cloud2"
+  ></span>
+                <span><img
+                class="position-absolute cloud3"
+                src="./img/cloud3.svg"
+                alt="cloud3"
+  ></span>
+                <span><img
+                class="position-absolute cloud4"
+                src="./img/cloud4.svg"
+                alt="cloud4"
+  ></span>
+                <span><img
+                class="position-absolute cloud5"
+                src="./img/cloud5.svg"
+                alt="cloud5"
+  ></span>
+                <span><img
+                class="position-absolute cloud6"
+                src="./img/cloud6.svg"
+                alt="cloud6"
+  ></span>
+                <span><img
+                class="position-absolute cloud7"
+                src="./img/cloud7.svg"
+                alt="cloud7"
+  ></span>
+                <span><img
+                class="position-absolute cloud8"
+                src="./img/cloud8.svg"
+                alt="cloud8"
+  ></span>
+                <span><img
+                class="position-absolute cloud9"
+                src="./img/cloud9.svg"
+                alt="cloud9"
+  ></span>
+                <span><img
+                class="position-absolute cloud10"
+                src="./img/cloud10.svg"
+                alt="cloud10"
+  ></span>
+                <span><img
+                class="position-absolute cloud11"
+                src="./img/cloud11.svg"
+                alt="cloud11"
+  ></span>
+                <span><img
+                class="position-absolute cloud12"
+                src="./img/cloud12.svg"
+                alt="cloud12"
+  ></span>
+                <span><img
+                class="position-absolute cloud24"
+                src="./img/cloud24.svg"
+                alt="cloud24"
+  ></span>
+            </div>
+        </section>
+        <section>
+            <h1 class="d-none">2</h1>
+            <div class="container">
+                <div class="row row-cols-lg-6 p-4 p-xl-5 sponsors flex-lg-row flex-column align-content-center justify-content-center">
+                    <span class="py-lg-4 py-1 col d-flex justify-content-center mb-4 mb-lg-0"><img src="./img/bit.svg" alt=""
+  ></span>
+                    <span class="py-lg-4 py-1 col d-flex justify-content-center mb-4 mb-lg-0"><img src="./img/apple.svg" alt=""
+  ></span>
+                    <span class="py-lg-4 py-1 col d-flex justify-content-center mb-4 mb-lg-0"><img src="./img/face.svg" alt=""
+  ></span>
+                    <span class="py-lg-4 py-1 col d-flex justify-content-center mb-4 mb-lg-0"><img src="./img/atlassian.svg" alt=""
+  ></span>
+                    <span class="py-lg-4 py-1 col d-flex justify-content-center"><img src="./img/audi.svg" alt=""
+  ></span>
+                </div>
+            </div>
+        </section>
+        <section class="bg-img-plan border-top border-bottom" id="features">
+            <div class="container">
+                <div class="row row-cols-6 blog-plan me-0 me-lg-5 flex-column flex-lg-row justify-content-center align-content-center">
+                    <div class="col-2 col-lg-1 d-lg-block d-none"></div>
+
+                    <div class="col-8 col-lg-5 blog__text pe-3 mb-5 mb-lg-0">
+                        <h4 class="text-center text-lg-start">DESKTOP AND MOBILE APP</h4>
+                        <h2 class="text-center text-lg-start">
+                            <span>Plan</span> and <span>manage</span>
+                        </h2>
+                        <p class="text-center text-lg-start">
+                            Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.
+                        </p>
+
+                        <div class="btn-blog d-flex justify-content-center justify-content-lg-start">
+                            <div class="btn-video d-flex align-content-center justify-content-center justify-content-lg-start">
+                                <div class="btn-color btn d-flex align-content-center">
+                                    <button class="btn bg-img-plan__btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        View video
+                      </button>
+                                    <div class="itd-triangle align-self-center">
+                                        <a href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="more-link border border-1 rounded">
+                                    <a href="#">See features</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 d-lg-block d-none"></div>
+                    <div class="col-8 col-lg-5 text-center position-relative blog__img">
+                        <div class="main-img position-absolute">
+                            <img src="./img/screen.png" alt="logo">
+                        </div>
+                        <div class="img-wrapper1 position-absolute">
+                            <img src="./img/Reminder-events.svg" alt="logo">
+                        </div>
+                        <div class="img-wrapper2 position-absolute">
+                            <img src="./img/Reminder-search.svg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container position-relative">
+                <span><img
+                class="position-absolute cloud14"
+                src="./img/cloud14.svg"
+                alt="cloud1"></span>
+                <span><img
+                class="position-absolute cloud15"
+                src="./img/cloud15.svg"
+                alt="cloud2"></span>
+                <span><img
+                class="position-absolute cloud16"
+                src="./img/cloud16.svg"
+                alt="cloud3"></span>
+                <span><img
+                class="position-absolute cloud17"
+                src="./img/cloud17.svg"
+                alt="cloud4"></span>
+                <span><img
+                class="position-absolute cloud18"
+                src="./img/cloud18.svg"
+                alt="cloud5"></span>
+                <span><img
+                class="position-absolute cloud19"
+                src="./img/cloud19.svg"
+                alt="cloud6"></span>
+                <span><img
+                class="position-absolute cloud20"
+                src="./img/cloud20.svg"
+                alt="cloud7"></span>
+                <span><img
+                class="position-absolute cloud21"
+                src="./img/cloud21.svg"
+                alt="cloud8"></span>
+                <span><img
+                class="position-absolute cloud22"
+                src="./img/cloud22.svg"
+                alt="cloud9"></span>
+                <span><img
+                class="position-absolute cloud23"
+                src="./img/cloud23.svg"
+                alt="cloud10"></span>
+                <h4 class="text-center">ABOUT US</h4>
+                <h2 class="text-center">
+                    <span>Read about our app</span>
+                </h2>
+
+                <div class="about__cards row row-cols-1 row-cols-md-2 row-cols-xl-6 justify-content-center px-5 px-lg-0">
+                    <div class="col"></div>
+                    <div class="col d-xl-none"></div>
+                    <div class="col col-lg-3 about__card mb-5 mb-lg-0">
+                        <div class="wrapper-card d-flex flex-column">
+                            <div class="about__logo mx-auto d-flex justify-content-center">
+                                <a class="align-self-center" href="#">
+                                    <img class="align-self-center" src="./img/about1.svg" alt="about-logo">
+                                </a>
+                            </div>
+                            <h3>Overview</h3>
+                            <p>
+                                Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 about__card mb-5 mb-lg-0">
+                        <div class="wrapper-card d-flex flex-column">
+                            <div class="about__logo mx-auto d-flex justify-content-center">
+                                <a class="align-self-center" href="#">
+                                    <img src="./img/about2.svg" alt="about-logo">
+                                </a>
+                            </div>
+                            <h3>Files</h3>
+                            <p>
+                                No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex has.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 about__card mb-5 mb-lg-0">
+                        <div class="wrapper-card d-flex flex-column">
+                            <div class="about__logo mx-auto d-flex justify-content-center">
+                                <a class="align-self-center" href="#">
+                                    <img src="./img/about3.svg" alt="about-logo">
+                                </a>
+                            </div>
+                            <h3>Meeting chats</h3>
+                            <p>
+                                Vim ne tacimates neglegentur. Erat diceret omittam at est.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-lg-3 about__card mb-5 mb-lg-0">
+                        <div class="wrapper-card d-flex flex-column">
+                            <div class="about__logo mx-auto d-flex justify-content-center">
+                                <a class="align-self-center" href="#">
+                                    <img src="./img/about4.svg" alt="about-logo">
+                                </a>
+                            </div>
+                            <h3>Save events</h3>
+                            <p>Nisl idque mel ea, nominati voluptatum.</p>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-3 col-md-1 btn2">
+                        <button class="btn">Read Mo</button>
+                    </div>
+                    <div class="about__button_bet col-3 col-md-1 d-flex align-content-center">
+                        <span class="d-flex justify-content-center w-100 align-self-center">OR</span
+                >
+              </div>
+              <div class="col-3 col-md-1">
+                <button class="btn1 btn">Get started</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="info">
+          <h1 class="d-none">1</h1>
+          <div class="row row-cols-2">
+            <div class="col info__left text-white">
+              <div class="info__inner d-flex flex-column">
+                <span class="mb-3 align-self-end">
+                  <img
+                    class="align-self-end"
+                    src="./img/info-logo.svg"
+                    alt="info-logo"
+        >
+                </span>
+                        <span class="info__result text-white align-self-end mb-1 mb-sm-3">89%</span>
+                        <span class="w-50 align-self-end mb-1 mb-sm-3">
+                          <span class="info__descr text-end">
+                    Customers who have increased their productivity
+                  </span></span>
+                    </div>
+                </div>
+                <div class="col info__right">
+                    <div class="info__inner d-flex flex-column">
+                        <span class="info__logo  mb-3">
+                  <img src="./img/info-logo2.svg" alt="info-logo">
+                </span>
+                        <span class="info__result mb-1 mb-sm-3">3123</span>
+                        <span class="w-50 align-self-start mb-1 mb-sm-3">
+                          <span class="info__descr text-start">
+                    Users who have used our application
+                  </span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-blog" id="our-blog">
+            <div class="container">
+                <h4 class="text-center">OUR RESOURCES</h4>
+                <h2 class="text-center">Start reading our blog</h2>
+                <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-item__wrapper d-flex flex-lg-row justify-content-between m-auto bg-white row">
+                                <div class="carousel-item__left col-12 col-lg-6 pe-4">
+                                    <div class="carousel-item-img row mb-5 mb-lg-0 gx-lg-3">
+                                        <div class="col-7 col-lg-8 carousel-item__img1 h-100 position-relative d-flex justify-content-lg-center justify-content-end align-content-center overflow-hidden">
+                                            <img class="img-fluid img-carousel" src="./img/carousel-item__img1.jpg" alt="img">
+                                            <img class="position-absolute circle__img d-none d-lg-flex align-self-center justify-content-center" src="./img/carousel-item__img1-hover.svg" alt="img">
+                                        </div>
+                                        <div class="col-5 col-lg-4 carousel-item__img-twice">
+                                            <div class="carousel-item-img flex justify-content-start carousel-item__img2">
+                                                <img src="./img/carousel-item__img2.jpg" alt="img">
+                                            </div>
+                                            <div class="carousel-item-img flex justify-content-start carousel-item__img3">
+                                                <img src="./img/carousel-item__img3.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item__right col-12 col-lg-6 ps-4">
+                                    <h2 class="carousel-item__title text-center text-lg-start">
+                                        How to start planning
+                                    </h2>
+                                    <p class="carousel-item__descr text-center text-lg-start">
+                                        Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...
+                                    </p>
+                                    <div class="carousel-item__right-bottom d-flex justify-content-center justify-content-lg-start">
+                                        <button class="btn1 btn d-flex align-content-center justify-content-center">
+                          Read now
+                        </button>
+                                        <a href="#">Add to your bookmarks</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item__wrapper d-flex flex-lg-row justify-content-between m-auto bg-white row">
+                                <div class="carousel-item__left col-12 col-lg-6 pe-4">
+                                    <div class="carousel-item-img row mb-5 mb-lg-0 gx-lg-3">
+                                        <div class="col-7 col-lg-8 carousel-item__img1 h-100 position-relative d-flex justify-content-lg-center justify-content-end align-content-center overflow-hidden">
+                                            <img class="img-fluid img-carousel" src="./img/carousel-item__img1.jpg" alt="img">
+                                            <img class="position-absolute circle__img d-none d-lg-flex align-self-center justify-content-center" src="./img/carousel-item__img1-hover.svg" alt="img">
+                                        </div>
+                                        <div class="col-5 col-lg-4 carousel-item__img-twice">
+                                            <div class="carousel-item-img flex justify-content-start carousel-item__img2">
+                                                <img src="./img/carousel-item__img2.jpg" alt="img">
+                                            </div>
+                                            <div class="carousel-item-img flex justify-content-start carousel-item__img3">
+                                                <img src="./img/carousel-item__img3.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item__right col-12 col-lg-6 ps-4">
+                                    <h2 class="carousel-item__title text-center text-lg-start">
+                                        How to start planning
+                                    </h2>
+                                    <p class="carousel-item__descr text-center text-lg-start">
+                                        Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...
+                                    </p>
+                                    <div class="carousel-item__right-bottom d-flex justify-content-center justify-content-lg-start">
+                                        <button class="btn1 btn d-flex align-content-center justify-content-center">
+                          Read now
+                        </button>
+                                        <a href="#">Add to your bookmarks</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item__wrapper d-flex flex-lg-row justify-content-between m-auto bg-white row">
+                                <div class="carousel-item__left col-12 col-lg-6 pe-4">
+                                    <div class="carousel-item-img row mb-5 mb-lg-0 gx-lg-3">
+                                        <div class="col-7 col-lg-8 carousel-item__img1 h-100 position-relative d-flex justify-content-lg-center justify-content-end align-content-center overflow-hidden">
+                                            <img class="img-fluid img-carousel" src="./img/carousel-item__img1.jpg" alt="img">
+                                            <img class="position-absolute circle__img d-none d-lg-flex align-self-center justify-content-center" src="./img/carousel-item__img1-hover.svg" alt="img">
+                                        </div>
+                                        <div class="col-5 col-lg-4 carousel-item__img-twice">
+                                            <div class="carousel-item-img flex justify-content-start carousel-item__img2">
+                                                <img src="./img/carousel-item__img2.jpg" alt="img">
+                                            </div>
+                                            <div class="carousel-item-img flex justify-content-start carousel-item__img3">
+                                                <img src="./img/carousel-item__img3.jpg" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item__right col-12 col-lg-6 ps-4">
+                                    <h2 class="carousel-item__title text-center text-lg-start">
+                                        How to start planning
+                                    </h2>
+                                    <p class="carousel-item__descr text-center text-lg-start">
+                                        Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti. Natum petentium principes mei ea. Tota everti periculis vis ei, quas tibique pro at, eos ut decore ...
+                                    </p>
+                                    <div class="carousel-item__right-bottom d-flex justify-content-center justify-content-lg-start">
+                                        <button class="btn1 btn d-flex align-content-center justify-content-center">
+                          Read now
+                        </button>
+                                        <a href="#">Add to your bookmarks</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+                </div>
+            </div>
+        </section>
+        <section class="px-5 customers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-1 d-none d-xxl-block"></div>
+                    <div class="col-lg-4 col-12">
+                        <h4 class="text-center text-lg-start">TESTIMONIALS</h4>
+                        <h1 class="text-center text-lg-start">
+                            <span> Customers 's quotes</span>
+                        </h1>
+                        <p class="mx-auto mx-lg-0 mb-5 text-lg-start w-75">
+                            Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an.
+                        </p>
+                    </div>
+                    <div class="col-1 d-none d-xxl-block"></div>
+                    <div class="col-lg-8 col-12 col-xxl-6">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"></button>
+                            </div>
+                            <div class="custoners-cards position-relative">
+                                <div class="customers-logo position-absolute">
+                                    <img src="./img/customers-logo1.svg" alt="logo">
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-md-6 col-11 carousel-item-customers bg-white">
+                                                <p>
+                                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+                                                </p>
+                                            </div>
+                                            <div class="col-2 d-xl-none d-none d-md-block"></div>
+                                            <div class="col-4 d-none d-md-block carousel-item-customers bg-white bg-color-opac position-absolute">
+                                                <p>
+                                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-md-6 col-11 carousel-item-customers bg-white">
+                                                <p>
+                                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+                                                </p>
+                                            </div>
+                                            <div class="col-2 d-xl-none d-none d-md-block"></div>
+                                            <div class="col-4 d-none d-md-block carousel-item-customers bg-white bg-color-opac position-absolute">
+                                                <p>
+                                                    Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questions px-5" id="pricing">
+            <div class="container">
+                <h4 class="text-center mb-4">Customer help</h4>
+                <h2 class="text-center mb-5">
+                    <span>Frequently asked questions</span>
+                </h2>
+                <div class="row w-100">
+                    <div class="col-lg-2 d-none d-lg-block"></div>
+                    <div class="col-12 col-lg-8">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Reque insolens in vel?
+                      </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row flex-column align-content-center justify-content-center flex-md-row">
+                                            <div class="col-12 col-md-8 mb-3 mb-md-0 mx-auto mx-md-0">
+                                                Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+                                            </div>
+                                            <div class="col-12 col-md-4 d-flex justify-content-end align-content-center align-self-center">
+                                                <button class="btn">
+                             Go to documentation
+                            </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Vis rebum error graecis ea, id sit postea accusamus?
+                      </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row flex-column align-content-center justify-content-center flex-md-row">
+                                            <div class="col-12 col-md-8 mb-3 mb-md-0 mx-auto mx-md-0">
+                                                Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam. Eu usu vidit tractatos, vero tractatos ius an, in mel diceret persecuti.
+                                            </div>
+                                            <div class="col-12 col-md-4 d-flex justify-content-end align-content-center align-self-center">
+                                                <button class="text-center">
+                              to documentation
+                            </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Lorem repudiandae ne nec?
+                      </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row flex-column align-content-center justify-content-center flex-md-row">
+                                            <div class="col-12 col-md-8 mb-3 mb-md-0 mx-auto mx-md-0">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et eos natus asperiores, cumque ipsam ea nostrum quo. Veritatis fugiat aliquid quaerat architecto laborum quae obcaecati error? Unde iure neque mollitia.
+                                            </div>
+                                            <div class="col-12 col-md-4 d-flex justify-content-end align-content-center align-self-center">
+                                                <button class="btn">
+                              Go to documentation
+                            </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Ad dicit numquam vel. Et eos iudico feugait percipitur?
+                      </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row flex-column align-content-center justify-content-center flex-md-row">
+                                            <div class="col-12 col-md-8 mb-3 mb-md-0 mx-auto mx-md-0">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur assumenda consequuntur, incidunt tempora labore ullam doloribus earum facilis accusantium? Obcaecati quibusdam doloremque culpa, magnam voluptatem quia officiis itaque aperiam perspiciatis
+                                                dolore eligendi nisi et reiciendis odio iste suscipit nulla expedita?
+                                            </div>
+                                            <div class="col-12 col-md-4 d-flex justify-content-end align-content-center align-self-center">
+                                                <button class="btn">
+                              Go to documentation
+                            </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        Sea no dico percipitur. Fierent constituam definitiones id
+                        eum?
+                      </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <div class="row flex-column align-content-center justify-content-center flex-md-row">
+                                            <div class="col-12 col-md-8 mb-3 mb-md-0 mx-auto mx-md-0">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, voluptatem voluptatum? Porro ullam ut corrupti, et, placeat ea alias eaque est, ipsam quaerat ipsum eos molestiae quos sequi perferendis iusto ducimus nisi. Repellat ipsam itaque possimus
+                                                necessitatibus molestias, quod natus ipsa. Praesentium ab dicta veniam accusantium voluptatibus autem placeat totam.
+                                            </div>
+                                            <div class="col-12 col-md-4 d-flex justify-content-end align-content-center align-self-center">
+                                                <button class="btn">
+                              Go to documentation
+                            </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 col-lg-2 d-none d-lg-block"></div>
+                </div>
+            </div>
+        </section>
+        <section class="get-started" id="doc">
+            <div class="container position-relative">
+                <h4 class="text-center mb-4">PLAN YOUR LIFE</h4>
+                <h1 class="text-center mb-5">Get <span>started</span> now</h1>
+                <p class="mx-auto text-center w-50 mb-5">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata.</p>
+
+                <div class="btn-video border-0 d-flex align-content-center justify-content-center">
+                    <div class=" d-flex align-content-center">
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        View pricing
+                      </button>
+
+                    </div>
+                    <div class="more-link border border-1">
+                        Read documentation
+                    </div>
+                </div>
+                <span class="cloud1 position-absolute"><img src="./img/get-cloud1.svg" alt="get-cloud1"></span>
+                <span class="cloud2 position-absolute"><img src="./img/get-cloud2.svg" alt="get-cloud2"></span>
+                <span class="cloud3 position-absolute"><img src="./img/get-cloud3.svg" alt="get-cloud3"></span>
+                <span class="cloud4 position-absolute"><img src="./img/get-cloud4.svg" alt="get-cloud4"></span>
+                <span class="cloud5 position-absolute"><img src="./img/get-cloud5.svg" alt="get-cloud5"></span>
+                <span class="cloud6 position-absolute"><img src="./img/get-cloud6.svg" alt="get-cloud6"></span>
+                <span class="cloud7 position-absolute"><img src="./img/get-cloud7.svg" alt="get-cloud7"></span>
+                <span class="cloud8 position-absolute"><img src="./img/get-cloud8.svg" alt="get-cloud8"></span>
+            </div>
+        </section>
+        <section class="email-blog border-bottom border-top">
+            <div class="container">
+                <div class="row flex-column flex-lg-row justify-content-center align-content-center">
+                    <div class="col-lg-2 col-1"></div>
+                    <div class="col-8 col-lg-4 justify-content-center align-content-center align-self-center">
+                        <h3 class="text-lg-start text-center">Sign up for newsletter</h3>
+                        <p class="text-lg-start text-center">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero alterum.</p>
+                    </div>
+                    <div class="col-8 col-lg-6 mt-4 flex-column d-flex justify-content-center">
+                        <form class="d-flex flex-column flex-md-row justify-content-md-center justify-content-between" action="#">
+                            <input class="email-blog__input me-0 me-md-4 mb-4 mb-md-0" type="email" placeholder="Email address">
+                            <input class="email-blog__input" type="submit" value="Save me">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <nav class="navbar bg-white px-lg-5 py-3 px-1 align-content-center justify-content-center">
+                <div class="d-flex align-self-center me-0 me-lg-auto">
+                    <a class="nav-link me-5 me-lg-2 me-lg-3 align-self-center" href="#"><img class="logo" src="./img/logo.png" alt="logo"></a>
+                    <ul class="navbar-nav py-3 flex-row d-none d-lg-flex align-content-center">
+                        <li class="nav-item me-4">
+                            <a class="color-text text-primary" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="color-text" href="#our-blog">Blog</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="color-text" href="#features">Features</a>
+                        </li>
+                        <li class=" nav-item me-4">
+                            <a class="color-text" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="color-text" href="#doc">Documentation</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="links d-flex align-content-center">
+                    <ul class="links d-flex align-content-center me-4 me-lg-2">
+                        <li class="nav-item-link me-4 me-md-5 align-self-center">
+                            <a href="http://www.facebook.com.vn/"><svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 9 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.65597 17V9.24548H8.22501L8.60969 6.2234H5.65597V4.294C5.65597 3.41904 5.89578 2.82278 7.13417 2.82278L8.71368 2.82208V0.119112C8.44051 0.0822826 7.5029 -1.65981e-08 6.41206 -1.65981e-08C4.13475 -1.65981e-08 2.57564 1.40836
+                                  2.57564 3.9947V6.2234H-2.3404e-08V9.24548H2.57564V17H5.65597Z"
+                        fill="#B6BAC7"
+            />
+                    </svg>
+                  </a>
+                        </li>
+                        <li class="nav-item-link me-4 me-md-5 align-self-center">
+                            <a href="https://telegram.org/"><svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 15 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.04945 8.72806L11.4957 12.5768C12.1172 12.9048 12.5657 12.735 12.7205 12.0249L14.9374 2.03246C15.1644 1.16206 14.5906 0.76729 13.996 1.02547L0.978404 5.82666C0.0898302 6.16756 0.0950105 6.64173 0.816436 6.85301L4.15705 7.85032L11.8909
+                                  3.18335C12.256 2.97158 12.5911 3.08543 12.3161 3.31891"
+                        fill="#B6BAC7"
+            />
+                    </svg>
+                  </a>
+                        </li>
+                        <li class="nav-item-link me-4 me-md-5 align-self-center">
+                            <a href="https://hca.twimg.com/ru/using-twitter/create-twitter-account"><svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 18 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.0328 1.84041C16.4253 2.11761 15.7726 2.30417 15.0877 2.38898C15.7868 1.95807 16.3239 1.27594 16.5767 0.46342C15.9222 0.862259 15.1973 1.15191 14.4257 1.308C13.8081 0.631966 12.9276 0.210602 11.9535 0.210602C10.0832 0.210602
+                                  8.56631 1.76886 8.56631 3.69017C8.56631 3.96313 8.59598 4.22867 8.65402 4.48334C5.83853 4.33759 3.3424 2.95159 1.67204 0.847419C1.38053 1.36154 1.2135 1.95887 1.2135 2.59648C1.2135 3.80359 1.81147 4.86853 2.72005 5.49303C2.16541
+                                  5.47448 1.64276 5.31812 1.18615 5.05709V5.10081C1.18615 6.7876 2.35476 8.19347 3.90258 8.51347C3.61882 8.59297 3.31957 8.63537 3.01181 8.63537C2.79357 8.63537 2.581 8.61417 2.37462 8.5731C2.80543 9.95591 4.05659 10.9619 5.53864
+                                  10.99C4.37931 11.9228 2.91868 12.4793 1.33113 12.4793C1.05768 12.4793 0.788618 12.4634 0.523682 12.4308C2.02249 13.4183 3.80327 13.9944 5.71599 13.9944C11.946 13.9944 15.3531 8.69155 15.3531 4.09365C15.3531 3.94259 15.3498
+                                  3.79286 15.3433 3.64313C16.0053 3.15286 16.5798 2.53937 17.0338 1.84107"
+                        fill="#6188FF"
+            />
+                    </svg>
+                  </a>
+                        </li>
+                        <li class="nav-item-link me-4 me-md-5 align-self-center">
+                            <a href="https://vk.com/"><svg
+                      width="17"
+                      height="17"
+                      viewBox="0 0 17 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.0001 2.10651H16.3472C16.1047 2.10651 15.7619 2.45072 15.7619 2.67109V10.6583C15.7619 10.8789 16.1047 11.1796 16.3472 11.1796H17.0001V13.0755H11.084V11.1796H12.3223V2.78361H12.2616L9.36999 13.0755H7.13129L4.277 2.78361H4.20477V11.1796H5.44303V13.0755H0.48999V11.1796H1.12422C1.38542
+                                  11.1796 1.72825 10.8789 1.72825 10.6583V2.67109C1.72825 2.45072 1.38542 2.10651 1.12422 2.10651H0.48999V0.210635H6.68355L8.717 7.65872H8.77295L10.8252 0.210635H17.0001V2.10651Z"
+                        fill="#757E9A"
+            />
+                    </svg>
+                  </a>
+                        </li>
+                    </ul>
+                    <button class="btn1 btn d-flex align-content-center justify-content-center d-none d-lg-fl justify-content-centerex">
+                Get started
+              </button>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-10 mx-auto ps-2">
+                    <p class="ps-5 justify-content-center justify-content-lg-start">Copyright © 2018 by Random site
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="mymodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get started</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-container">
+                        <iframe src="https://www.youtube.com/embed//-ssshFyfr5c" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">View video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-container">
+                        <iframe src="https://www.youtube.com/embed/undefined" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
